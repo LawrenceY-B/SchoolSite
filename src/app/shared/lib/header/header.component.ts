@@ -9,8 +9,8 @@ export class HeaderComponent implements OnInit {
   navigation = [
     {name:"Home", tag:'home'},
     {name:"About", tag:'about'},
-    {name:"Admission", tag:'admission'},
     {name:"Academics", tag:'academics'},
+    {name:"Admission", tag:'admission'},
     {name:"Contact", tag:'contact'},
 
    

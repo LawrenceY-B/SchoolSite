@@ -1,0 +1,79 @@
+.bar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 30vh;
+    background: linear-gradient(90deg, rgba(19, 208, 27, 0.5) 0%, rgba(19, 208, 27, 0.19) 51.89%, rgba(19, 208, 27, 0.5) 98.44%);
+
+    h2 {
+        font-family: 'Quicksand Medium';
+        font-size: 4vw;
+        margin: 5px;
+    }
+}
+.contentBox{display: flex;
+flex-wrap: wrap;}
+
+.contentBox div:nth-of-type(1) {flex-grow: 3;}
+.contentBox div:nth-of-type(2) {flex-grow: 1;}
+
+.form-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 30px;
+}
+input[type=text] {
+    padding: 8px ;
+    margin: 8px 0;
+    display: inline-block;
+    border: 0px;
+    border-bottom: 1px solid #ccc;
+    box-sizing: border-box;
+    line-height: 6ex;
+    position: relative;
+  }
+  
+  /* Style the submit button */
+  input[type=submit] {
+    width: 100%;
+   
+    background-color: #FDC922;
+    color: black;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 10px;
+    
+    cursor: pointer;
+    font-size: 20px;
+    line-height: 24px;
+  }
+  ::placeholder { 
+    color: black; 
+  }
+  
+  /* Add a background color to the submit button on mouse-over */
+  input[type=submit]:hover {
+    background-color: #dca800;
+    margin: 8px 0;
+  }
+  .infoBox{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 25px;
+  }
+  .map{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    iframe{
+        border-radius: 20px;
+        width:80%;
+        height: 40vh;
+    }
+  }

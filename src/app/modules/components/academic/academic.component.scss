@@ -1,0 +1,39 @@
+.bar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 30vh;
+    background: linear-gradient(90deg, rgba(253, 201, 34, 0.5) 0%, rgba(253, 201, 34, 0.2) 51.89%, rgba(253, 201, 34, 0.5) 98.44%);
+    h2 {
+        font-family: 'Quicksand Medium';
+        font-size: 4vw;
+        margin: 5px;
+    }
+}
+.contentBox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    img{
+        margin: 30px;
+        height: 55vh;
+        width:60%;
+        object-fit: cover;
+        object-position: center;
+    }
+    .textbox{
+        width: 55%;
+        margin: 20px 10px;
+        h2{
+            font-family: 'Quicksand Medium';
+            font-size: 35px;
+            text-align: center;
+            margin: 10px;
+            font-weight: 500;
+        }
+    }
+}
