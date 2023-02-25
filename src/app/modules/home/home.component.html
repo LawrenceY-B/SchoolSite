@@ -1,0 +1,18 @@
+<app-header></app-header>
+<div class="slider-main-container">
+    <div class="slider-wrapper">
+        <swiper [slidesPerView]="1" [spaceBetween]="30" [loop]="true" [navigation]="true"
+            [pagination]="{ clickable: true }" [scrollbar]="{ draggable: true }"
+            [autoplay]="{ delay: 4000, disableOnInteraction: false }">
+            <ng-template swiperSlide>
+                <img src="assets/images/building.png" alt="" srcset="">
+            </ng-template>
+        </swiper>
+    </div>
+</div>
+
+
+
+<app-footer></app-footer>
+<!-- (swiper)="onSwiper($event)"
+(slideChange)="onSlideChange()" -->

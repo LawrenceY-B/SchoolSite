@@ -1,1 +1,9 @@
-/* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: 'Quicksand Regular';
+    src: url("assets/fonts/Quicksand/Quicksand-Regular.ttf") format("opentype");
+    }
+
+*{
+    margin:0;
+    font-family: 'Quicksand Regular';
+}
