@@ -6,7 +6,19 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
+  navigation = [
+    {name:"Home", tag:'home'},
+    {name:"About", tag:'about'},
+    {name:"Admission", tag:'admission'},
+    {name:"Academics", tag:'academics'},
+    {name:"Contact", tag:'contact'},
 
+   
+ 
+  ]
+  updateUrl(nav : any){
+    window.location.href = "/"+ nav.tag
+}
   constructor() { }
 
   ngOnInit(): void {

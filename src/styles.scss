@@ -1,9 +1,18 @@
 @font-face {
     font-family: 'Quicksand Regular';
     src: url("assets/fonts/Quicksand/Quicksand-Regular.ttf") format("opentype");
-    }
+}
 
-*{
-    margin:0;
+@font-face {
+    font-family: 'Quicksand Medium';
+    src: url("assets/fonts/Quicksand/Quicksand-Medium.ttf") format("opentype");
+}
+@font-face {
+    font-family: 'Quicksand Light';
+    src: url("assets/fonts/Quicksand/Quicksand-Light.ttf") format("opentype");
+}
+
+* {
+    margin: 0;
     font-family: 'Quicksand Regular';
 }

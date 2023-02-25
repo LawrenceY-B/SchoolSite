@@ -1,1 +1,20 @@
-<p>header works!</p>
+<div class="headerbar"></div>
+<div class="header">
+   
+    <span> <img src="/assets/images/logo.png" alt="">
+        <h5 class="headertitle">Shepherd's<br /> Infant<br /> School
+        </h5>
+    </span>
+    <div class="menu">
+
+        <div *ngFor="let nav of navigation">
+            <!-- <a routerLink={{nav.tag}} routerLinkActive="active" ariaCurrentWhenActive="page">{{nav.name}}</a> -->
+            <a (click)="updateUrl(nav)" routerLinkActive="active">
+                <p>{{nav.name}}</p>
+            </a>
+
+        </div>
+
+
+    </div>
+</div>
