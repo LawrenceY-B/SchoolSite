@@ -1,4 +1,5 @@
 footer {
+    
     margin: 80px 0px 0px 0px;
     display: flex;
     flex-direction: column;
@@ -6,9 +7,11 @@ footer {
     align-items: center;
 
     p {
+        cursor: default;
         font-family: 'Quicksand Light';
         margin: 10px;
         font-weight: 500;
         font-size: 20px;
+        text-align: center;
     }
 }
