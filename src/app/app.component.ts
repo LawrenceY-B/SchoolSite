@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { SwiperOptions } from 'swiper';
 
 @Component({
   selector: 'app-root',
@@ -7,20 +6,6 @@ import { SwiperOptions } from 'swiper';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'SchoolSite';
+  title = 'Shepherds Infant School';
   
-  config: SwiperOptions = {
-    slidesPerView: 1,
-    spaceBetween: 50,
-    navigation: true,
-    pagination: { clickable: true },
-    scrollbar: { draggable: true },
-  };
-
-  onSwiper(swiper: any) {
-    console.log(swiper);
-  }
-  onSlideChange() {
-    console.log('slide change');
-  }
 }
