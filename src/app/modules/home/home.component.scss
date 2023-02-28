@@ -140,7 +140,9 @@ img {
     margin: 5px;
   }
   p{
+    margin: 10px 50px;
     font-size: 20px;
+    text-align: justify;
   }
   h4{
     font-family: 'Quicksand Regular';
@@ -153,7 +155,7 @@ form{
   justify-content: center;
   align-items: center;
   position: relative;
-  width: 25vw;
+  width: 30%;
   input[type=text] {
     
     width: 70%;
@@ -183,5 +185,10 @@ form{
   }
   ::placeholder { 
     color: #888888; 
+  }
+}
+@media only screen and (max-width: 768px){
+  form{
+    width: 100vw;
   }
 }
