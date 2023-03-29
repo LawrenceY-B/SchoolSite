@@ -10,11 +10,11 @@
         <p>Tel: 024 433 1550</p>
     </div>
     <div>
-        <form action="" class="form-box">
-            <input type="text" name="" id="" placeholder="Name">
-            <input type="text" name="" id="" placeholder="Email Address">
-            <input type="text" name="" id="" placeholder="Message">
-            <a [routerLink]="['/home']">  <input type="submit" value="Submit"></a>
+        <form class="form-box" #myForm="ngForm" >
+            <input type="text" name="name" id="" placeholder="Name" [(ngModel)]="name"  required>
+            <input type="email" name="email" id="" placeholder="Email Address" [(ngModel)]="email" required>
+            <input type="text" name="message" id="" placeholder="Message" [(ngModel)]="message"  required>
+            <a [routerLink]="['/home']">  <input type="submit" value="Submit" (click)="onSubmit()"></a>
         </form>
     </div>
     

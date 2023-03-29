@@ -11,9 +11,33 @@
     font-family: 'Quicksand Light';
     src: url("assets/fonts/Quicksand/Quicksand-Light.ttf") format("opentype");
 }
+@font-face {
+    font-family: 'Rubik Light';
+    src: url("assets/fonts/rubik/Rubik-Light.ttf") format("opentype");
+  }
+  @font-face {
+    font-family: 'Rubik Regular';
+    src: url("assets/fonts/rubik/Rubik-Regular.ttf") format("opentype");
+  }
+  @font-face {
+    font-family: 'Rubik Bold';
+    src: url("assets/fonts/rubik/Rubik-Bold.ttf") format("opentype");
+  }
+  @font-face {
+    font-family: 'Rubik Medium';
+    src: url("assets/fonts/rubik/Rubik-Medium.ttf") format("opentype");
+  }
+  @font-face {
+    font-family: 'Rubik ExtraBold';
+    src: url("assets/fonts/rubik/Rubik-ExtraBold.ttf") format("opentype");
+  }
+  @font-face {
+    font-family: 'Rubik Black';
+    src: url("assets/fonts/rubik/Rubik-Black.ttf") format("opentype");
+  }
 
 * {
     margin: 0;
-    font-family: 'Quicksand Regular';
+    font-family: 'Rubik Light';
     overflow-x: hidden;
 }
