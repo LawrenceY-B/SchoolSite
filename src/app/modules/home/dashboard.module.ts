@@ -9,13 +9,13 @@ import { PageNotFoundComponent } from '../components/page-not-found/page-not-fou
 import { RoutingModule } from './routing.module';
 import { SharedModule } from 'src/app/shared/shared.module';
 import { SwiperModule } from 'swiper/angular';
+import { FormsModule } from '@angular/forms';
 
 
 
 @NgModule({
   declarations: [
     HomeComponent,
-
     AboutComponent,
     AcademicComponent,
     AdmissionComponent,
@@ -26,7 +26,8 @@ import { SwiperModule } from 'swiper/angular';
     CommonModule,
     RoutingModule,
     SharedModule,
-    SwiperModule
+    SwiperModule,
+    FormsModule,
   ]
 })
 export class HomeModule { }
