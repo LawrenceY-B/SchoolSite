@@ -11,7 +11,7 @@ export default function HomePage() {
   return (
     <>
       <Hero />
-      <div className="relative z-10 -my-4 overflow-x-clip py-10">
+      <div className="relative z-10 -mt-[calc(2.5rem+4vw)] -mb-4 overflow-x-clip py-10">
         <Marquee
           items={home.marquee}
           className="-ml-[3vw] w-[106vw] -rotate-2 bg-sun py-5 font-display text-[clamp(2rem,5vw,4.5rem)] font-black tracking-tight"

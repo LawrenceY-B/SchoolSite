@@ -37,10 +37,13 @@ export default function Hero() {
         .from("[data-doodle]", { scale: 0, rotate: -120, duration: 0.9, stagger: 0.08, ease: "back.out(2.5)" }, 0.7);
       const off = whenReady(() => intro.play());
 
+      // Explicit start values: the intro's .from() has already set sun/crowd to their
+      // hidden state, which plain .to() tweens would otherwise record as the scroll start.
       const scrub = { trigger: root.current, start: "top top", end: "bottom top", scrub: true };
-      gsap.to("[data-sun]", { yPercent: 35, scale: 1.25, ease: "none", scrollTrigger: scrub });
-      gsap.to("[data-copy]", { yPercent: -25, ease: "none", scrollTrigger: scrub });
-      gsap.to("[data-crowd]", { yPercent: 12, ease: "none", scrollTrigger: scrub });
+      const parallax = { ease: "none", immediateRender: false, scrollTrigger: scrub };
+      gsap.fromTo("[data-sun]", { yPercent: 0, scale: 1 }, { yPercent: 35, scale: 1.25, ...parallax });
+      gsap.fromTo("[data-copy]", { yPercent: 0 }, { yPercent: -25, ...parallax });
+      gsap.fromTo("[data-crowd]", { yPercent: 0 }, { yPercent: 12, ...parallax });
       return off;
     },
     { scope: root },
