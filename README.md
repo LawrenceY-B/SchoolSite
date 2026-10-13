@@ -15,8 +15,8 @@ All site copy is in `lib/content.ts`. Items marked `TODO: confirm` need checking
 
 ## Contact form
 
-`app/api/contact/route.ts` forwards messages to the Express backend (`schoolsSitebackend`).
-Set `CONTACT_API_URL` to its public URL in production (defaults to `http://localhost:3003/api/addmessage`).
+`app/api/contact/route.ts` validates messages and saves them to MongoDB (the `contacts` collection, same as the old Express backend).
+Set `MONGODB_URI` in `.env.local` locally and in the Vercel project settings for production.
 
 ## Credits
 

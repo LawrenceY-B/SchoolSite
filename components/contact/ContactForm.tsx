@@ -28,7 +28,7 @@ export default function ContactForm() {
       const res = await fetch("/api/contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(values),
+        body: JSON.stringify({ ...values, company: (e.currentTarget as HTMLFormElement).company?.value ?? "" }),
       });
       if (!res.ok) throw new Error();
       setStatus("sent");
@@ -90,6 +90,8 @@ export default function ContactForm() {
       {input("name", "Your name")}
       {input("email", "Email address", "email")}
       {input("message", "Your message")}
+      {/* Honeypot for bots; hidden from people and assistive tech */}
+      <input type="text" name="company" tabIndex={-1} autoComplete="off" aria-hidden="true" className="absolute -left-[9999px] h-0 w-0 opacity-0" />
       {status === "error" && (
         <p role="alert" className="rounded-2xl bg-cherry/10 p-4 font-semibold text-cherry">
           Sorry, we couldn&apos;t send that just now. Please try again or call us on 024 433 1550.
